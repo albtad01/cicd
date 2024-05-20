@@ -42,7 +42,8 @@
 std::string balancedNum(unsigned long long int number)
 {
   // your code here
-  return "";
+  std::string numberStr = std::to_string(number);
+  return numberStr;
 }
 
 // ********************************************************************************************************
