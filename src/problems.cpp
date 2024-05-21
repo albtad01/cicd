@@ -44,6 +44,7 @@ std::string balancedNum(unsigned long long int number)
   // your code here
   int i=0;
   std::string numberStr = std::to_string(number);
+
   i+=1;
   return numberStr;
 }
@@ -60,7 +61,7 @@ std::string balancedNum(unsigned long long int number)
 // "moOse" --> false (ignore letter case)
 
 bool is_isogram(std::string str) {
-  // your code here
+  // your code herel
   return false;
 }
 
@@ -107,6 +108,12 @@ bool is_isogram(std::string str) {
 // Test has at least one question.
 // len(key) == len(answers)
 
+// trova la lunghezza dei due (lunghezza uguale) -> len; 
+// se _ metti direttamente equal++ dis++
+// se primo uguale a primo, secondo uguale a secondo, ... , n uguale a n -> equal++, se equal==len return true
+// se primo diverso da primo, secondo diverso da secondo, ... , n diverso da n -> dis++ se dis==len return true
+// altrimenti return false
+
 bool possibly_perfect(const std::vector<char>& key, const std::vector<char>& answers)
 {
     // your code here
@@ -131,6 +138,9 @@ int findOdd(const std::vector<int> &numbers)
   // your code here
   return 1;
 }
+
+// fai un for; prendi l'elemento i e fai un altro for in cui confronti l'elemento i-esimo con lo scorrimento di tutta la lista j
+// incrementi cont++ se v[i]==v[j] e a quel punto se alla fine cont%2!=0, return v[i]
 
 // ********************************************************************************************************
 
